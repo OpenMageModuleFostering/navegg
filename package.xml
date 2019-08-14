@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>Navegg</name>
-    <version>0.1.3</version>
+    <version>0.1.4.1</version>
     <stability>stable</stability>
     <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
     <channel>community</channel>
@@ -23,11 +23,11 @@ Unleash all the power of the online audience segmentation in your store! Know yo
 You can enjoy the advantages of audience segmentation right now: Navegg offers 3 plans that can be hired online at http://www.navegg.com/en, including a completely free-of-charge option. Just choose the one that suits you best and start using it!&#xD;
 &#xD;
 Navegg's plugin for Magento automatically inserts Navegg's tag on every page of your store - no setup, no code, no hassles.</description>
-    <notes>Works with Magento Enterprise Edition 1.7.0.0 or later, Professional Edition 1.9.0.0 or later, and Magento Community Edition 1.3.3.0 or later.</notes>
+    <notes>Works with Magento Enterprise Edition 1.7.0.0 or later, Professional Edition 1.9.0.0 or later, and Magento Community Edition 1.5 or later.</notes>
     <authors><author><name>Navegg</name><user>naveggit</user><email>it@navegg.com</email></author></authors>
-    <date>2012-05-28</date>
-    <time>14:59:33</time>
-    <contents><target name="magecommunity"><dir name="Buscape"><dir name="Navegg"><dir name="Block"><dir name="Page"><file name="Body.php" hash="59a2dbb6785833d17a63b70787651d3a"/><file name="Head.php" hash="2d96ba478755d41329734a12b5b4b6bc"/></dir></dir><dir name="Helper"><file name="Data.php" hash="f3b4f9fcacd819ffe2a890946be89d76"/></dir><dir name="Model"><file name="Config.php" hash="5045a50afca42fc7f88a11a67e21eb39"/><file name="Observer.php" hash="5cff59fba61c448887851401a9f79d1a"/></dir><dir name="etc"><file name="config.xml" hash="71636ef236f27da354fa50bd68af8065"/><file name="system.xml" hash="b0b92817a3c444995ca08f48be6a5638"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Buscape_Navegg.xml" hash="a26c9693f912667045aace553839bf3c"/></dir></target></contents>
+    <date>2015-11-04</date>
+    <time>12:45:24</time>
+    <contents><target name="magecommunity"><dir name="Navegg"><dir name="Analytics"><dir name="Block"><dir name="Page"><file name="Body.php" hash="5d62c29fd9791b8e414c99c0c9b4253c"/><file name="Head.php" hash="cd32419c5e698aba1ba4a496822a1c0b"/></dir></dir><dir name="Helper"><file name="Data.php" hash="b76493e32b3088a9e8dc0b55a3f7bc34"/></dir><dir name="Model"><file name="Config.php" hash="6471ba07067b5212f45a8020ff2e6c24"/><file name="Observer.php" hash="05fa51b0696965de817a18f4338385f6"/></dir><dir name="controllers"><file name="IndexController.php" hash="8adbc9657796ae93d7f7f4bffeb972a8"/></dir><dir name="etc"><file name="config.xml" hash="fba3e0a1de318d2bb3e744d9c9f7d066"/><file name="system.xml" hash="826ffc4e39d0ca3bd440b2e8549408ae"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="analytics.xml" hash="9f36d65d1dfce762bb93d186c2408341"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Navegg_Analytics.xml" hash="263b9288bbc0dae24ae40ac7b3bffbda"/></dir></target><target name="magemedia"><dir name="navegg"><dir name="analytics"><file name="navegg-analytics.png" hash="85e7fa0ca60466aa2f754acdc66da8d9"/><file name="ui_wp_nvg.png" hash="0a6902ae1e271c72cba49f2f0cabb826"/><file name="ui_wp_nvg_usr.png" hash="80a810f023211f22140f2dd0a51e1d01"/></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="base"><dir name="default"><dir name="analytics"><file name="custom.css" hash="20822f4ad1d7b43194d615b419e44e59"/></dir></dir></dir></dir></target><target name="mage"><dir name="js"><dir name="navegg"><dir name="analytics"><dir><dir name="adminhtml"><file name="admin.js" hash="e377882163684300b12a7a0ac1380f30"/></dir></dir></dir></dir></dir></target></contents>
     <compatible/>
     <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
 </package>

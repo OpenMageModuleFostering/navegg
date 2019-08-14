@@ -13,19 +13,19 @@
  * to suporte.developer@buscape-inc.com so we can send you a copy immediately.
  *
  * @category   Buscape
- * @package    Buscape_Navegg
- * @copyright  Copyright (c) 2010 Buscapé Company (http://www.buscapecompany.com)
+ * @package    Navegg_Analytics
+ * @copyright  Copyright (c) 2015 Navegg (http://www.navegg.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Buscape_Navegg_Model_Observer
+class Navegg_Analytics_Model_Observer
 {
-    const BLOCK_PAGE_HEAD = 'Buscape_Navegg_Block_Page_Head';
-    
-    const BLOCK_PAGE_BODY = 'Buscape_Navegg_Block_Page_Body';
-    
+    const BLOCK_PAGE_HEAD = 'Navegg_Analytics_Block_Page_Head';
+
+    const BLOCK_PAGE_BODY = 'Navegg_Analytics_Block_Page_Body';
+
     private static $_config;
-    
+
     private function _getConfig()
     {
         if(is_null(self::$_config)) {
@@ -33,7 +33,7 @@ class Buscape_Navegg_Model_Observer
         }
         return self::$_config;
     }
-    
+
     public function setPageHeadNavegg(Varien_Event_Observer $observer)
     {
         $head = Mage::app()->getFrontController()->getAction()->getLayout()->getBlock('head');

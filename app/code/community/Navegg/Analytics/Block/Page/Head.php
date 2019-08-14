@@ -13,19 +13,30 @@
  * to suporte.developer@buscape-inc.com so we can send you a copy immediately.
  *
  * @category   Buscape
- * @package    Buscape_Navegg
- * @copyright  Copyright (c) 2010 Buscapé Company (http://www.buscapecompany.com)
+ * @package    Navegg_Analytics
+ * @copyright  Copyright (c) 2015 Navegg (http://www.navegg.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Buscape_Navegg_Helper_Data extends Mage_Core_Helper_Abstract
+class Navegg_Analytics_Block_Page_Head extends Mage_Core_Block_Text
 {
-    
-    
-    public function isAvailable($store = null)
+    /**
+     * Render tracking scripts
+     *
+     * @return string
+     */
+    protected function _toHtml()
     {
-        // you must do the call for getConfig and get the informations of account
-        $accountId = Mage::getStoreConfig(Buscape_Navegg_Model_Config::XML_PATH_ACCOUNT, $store);
-        return $accountId && Mage::getStoreConfigFlag(Buscape_Navegg_Model_Config::XML_PATH_ACTIVE, $store);
+        if (!Mage::helper('navegg')->isAvailable()) {
+            return '';
+        }
+        
+        $html = '<!-- Navegg Code Begin -->';
+        
+        $html .= '<script id="navegg" type="text/javascript" src="//tag.navdmp.com/tm?'. $this->getNavegg() .'.js"></script>';
+
+        $html .= '<!-- Navegg Code End -->';
+        
+        return $html;
     }
 }

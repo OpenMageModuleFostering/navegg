@@ -13,12 +13,12 @@
  * to suporte.developer@buscape-inc.com so we can send you a copy immediately.
  *
  * @category   Buscape
- * @package    Buscape_Navegg
- * @copyright  Copyright (c) 2010 Buscapé Company (http://www.buscapecompany.com)
+ * @package    Navegg_Analytics
+ * @copyright  Copyright (c) 2015 Navegg (http://www.navegg.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Buscape_Navegg_Block_Page_Head extends Mage_Core_Block_Text
+class Navegg_Analytics_Block_Page_Body extends Mage_Core_Block_Text
 {
     /**
      * Render tracking scripts
@@ -31,11 +31,11 @@ class Buscape_Navegg_Block_Page_Head extends Mage_Core_Block_Text
             return '';
         }
         
-        $html = '<!-- Navegg Code Begin -->';
+        $html = '<!-- Navegg __CID -->';
         
-        $html .= '<script id="navegg" type="text/javascript" src="http://navdmp.com/lt.js?'. $this->getNavegg() .'"></script>';
+        $html .= '<input type="hidden" name="__cid" value="'.$this->getProductName().'" />';
         
-        $html .= '<!-- Navegg Code End -->';
+        $html .= '<!-- Navegg __CID -->';
         
         return $html;
     }

@@ -13,20 +13,21 @@
  * to suporte.developer@buscape-inc.com so we can send you a copy immediately.
  *
  * @category   Buscape
- * @package    Buscape_Navegg
- * @copyright  Copyright (c) 2010 Buscapé Company (http://www.buscapecompany.com)
+ * @package    Navegg_Analytics
+ * @copyright  Copyright (c) 2015 Navegg (http://www.navegg.com)
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
-class Buscape_Navegg_Model_Config extends Varien_Object
+class Navegg_Analytics_Model_Config extends Varien_Object
 {
-    const XML_PATH          = 'navegg_options/navegg/';
+    const XML_PATH          = 'navegg_analytics/navegg/';
     
-    const XML_PATH_ACTIVE   = 'navegg_options/navegg/active';
+    const XML_PATH_ACTIVE   = 'navegg_analytics/navegg/active';
     
-    const XML_PATH_ACCOUNT  = 'navegg_options/navegg/advertising';
+    const XML_PATH_ACCOUNT  = 'navegg_analytics/navegg/advertising';
     
     protected $_config = array();
+
     
     public function getConfigData($key, $storeId = null)
     {
@@ -48,6 +49,7 @@ class Buscape_Navegg_Model_Config extends Varien_Object
     
     public function getEvent($store = null)
     {
+        die(var_dump($this->_config));
         if (!$this->hasData('navegg_event')) {
             $this->setData('navegg_event', $this->getConfigData('event', $store));
         }
