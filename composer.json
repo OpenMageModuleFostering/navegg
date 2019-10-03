@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Navegg",
+    "name": "OpenMageModuleFostering\/Navegg",
     "type": "magento-module",
     "license": "OSL-v3.0",
     "homepage": "",
     "description": "Know your store's audience by gender, age, income, purchase intent and much more.",
     "authors": [
-    {
-        "name": "Navegg",
-        "email": "it@navegg.com"
-    }
-],
+        {
+            "name": "Navegg",
+            "email": "it@navegg.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
